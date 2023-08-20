@@ -11,7 +11,30 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
     const el = document.querySelector("body");
+    const el1 = document.querySelector(".header");
     observer.observe(el);
+
+
+    let observerOptions = {
+        // root: document.querySelector('window'),
+        // rootMargin: '0px',
+        threshold: 0.5
+    }
+    
+    let observer1 = new IntersectionObserver(elements => {
+        for (let el of elements) {
+            if (el.isIntersecting) {
+                el.target.classList.add('loaded');
+            } else {
+                el.target.classList.remove('loaded');
+            }
+        }
+    }, observerOptions);
+    
+    const divs = document.querySelectorAll(".header");
+    for (const div of divs) {
+        observer1.observe(div);
+    }
 
     function checkAndToggle() {
         const pos = el.getBoundingClientRect(); //pobieram pozycję i rozmiar elementu

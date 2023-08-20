@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MonsiWeb</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="app.js"></script>
-    <title>Document</title>
 </head>
 <body>
     <div class="section-nav">
@@ -20,12 +20,12 @@
                 </div>
                 <div class="nav-list">
                     <ul>
-                        <li class="nav-el">Our Service</li>
-                        <li class="nav-el">About Us</li>
-                        <li class="nav-el">Portfolio</li>
-                        <li class="nav-el">Blog</li>
-                        <li class="nav-el">Contact</li>
-                        <li class="nav-el last-nav">More</li>
+                        <a href="#service"><li class="nav-el">Our Service</li></a>
+                        <a href="#about"><li class="nav-el">About Us</li></a>
+                        <a href="#portfolio"><li class="nav-el">Portfolio</li></a>
+                        <a href="#blog"><li class="nav-el">Blog</li></a>
+                        <a href="#contact"><li class="nav-el">Contact</li></a>
+                        <a href="#more"><li class="nav-el last-nav">More</li></a>
                     </ul>
                 </div>
                 <div class="nav-btn">
@@ -37,12 +37,12 @@
         </div>
         <div class="nav-list nav-list-mobile">
             <ul>
-                <li class="nav-el">Our Service</li>
-                <li class="nav-el">About Us</li>
-                <li class="nav-el">Portfolio</li>
-                <li class="nav-el">Blog</li>
-                <li class="nav-el">Contact</li>
-                <li class="nav-el last-nav">More</li>
+                <a href="#service"><li class="nav-el">Our Service</li></a>
+                <a href="#about"><li class="nav-el">About Us</li></a>
+                <a href="#portfolio"><li class="nav-el">Portfolio</li></a>
+                <a href="#blog"><li class="nav-el">Blog</li></a>
+                <a href="#contact"><li class="nav-el">Contact</li></a>
+                <a href="#more"><li class="nav-el last-nav">More</li></a>
             </ul>
         </div>
     </div>
@@ -57,7 +57,7 @@
         </div>
         <div class="bottom-circle"></div>
     </div>
-    <div class="section-service">
+    <div class="section-service" id="service">
         <div class="container">
             <div class="header">
                 Our service
@@ -84,7 +84,7 @@
             </div>
         </div>
     </div>
-    <div class="about-us">
+    <div class="about-us" id="about">
         <div class="container">
             <div class="about-wrapper">
                 <div class="box-left">
@@ -115,7 +115,7 @@
             </div>
         </div>
     </div>
-    <div class="portfolio">
+    <div class="portfolio" id="portfolio">
         <div class="container">
             <div class="header">
                 Our Portfolio
@@ -226,7 +226,7 @@
             </div>
         </div>
     </div>
-    <div class="articles">
+    <div class="articles" id="blog">
         <div class="container">
             <div class="header">
                 Latest Articles
@@ -334,23 +334,32 @@
             </div>
         </div>
     </div>
-    <div class="contact">
-        <div class="constainer">
-            <div class="header">Drop Us A Line</div>
+    <div class="contact" id="contact">
+        <div class="contact-bg"></div>
+        <div class="container">
             <div class="contact-wrapper">
                 <div class="info">
                     <div class="title">Phone</div>
                     <div class="under">+48 123 456 678</div>
-                    <div class="title">Phone</div>
-                    <div class="under">+48 123 456 678</div>
-                    <div class="title">Phone</div>
-                    <div class="under">+48 123 456 678</div>
-                    <div class="title">Phone</div>
-                    <div class="under">+48 123 456 678</div>
+                    <div class="title">Adress</div>
+                    <div class="under">12345 Fake ST NoWhere AB Country</div>
+                    <div class="title">Email</div>
+                    <div class="under">info@website.com</div>
                 </div>
                 <div class="form-wrapper">
+                    <div class="header">Drop Us A Line</div>
+                    <div class="form-elements">
+                        <input class="element" placeholder="Name" type="text">
+                        <input class="element" placeholder="E-mail" type="email">
+                        <input class="element" placeholder="Subject" type="text">
+                        <textarea class="element" placeholder="Text" name="" id="" cols="30" rows="4"></textarea>
+                    </div>
+                    <a class="btn" href="">Send</a>
 
                 </div>
+            </div>
+            <div class="footer">
+                &copy; 2023, LeadMark Created By <a href="">MonsiWeb</a>. All rights reserved
             </div>
         </div>
     </div>
